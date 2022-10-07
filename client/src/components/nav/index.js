@@ -7,9 +7,9 @@ function Nav() {
     <>
      <nav className="navbar navbar-expand-lg navbar-light">
 
-<a className="navbar-brand" href="/">
+<Link className="navbar-brand" to="/">
   <img className="cm-logo" src= {cmLogo} alt=""/>
-</a>
+</Link>
 
 <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02">
   <span className="navbar-toggler-icon"></span>
@@ -20,31 +20,27 @@ function Nav() {
 
   <ul className="navbar-nav ml-auto">
     <li className="nav-item">
-      <a className="nav-link" href="/">Home</a>
+      <Link className="nav-link" to="/">Home</Link>
     </li>
 
     <li className="nav-item dropdown">
-      <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Collections</a>
+      <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Collections</Link>
       <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-        <a className="dropdown-item" href="/bracelets">Bracelets</a>
-        <a className="dropdown-item" href="cord-necklaces.html">Cord Necklaces</a>
-        <a className="dropdown-item" href="sterling.html">Sterling Silver</a>
-        <a className="dropdown-item" href="rings.html">Rings</a>
-        <a className="dropdown-item" href="chains.html">Chain Necklaces</a>
-        <a className="dropdown-item" href="earring.html">Earrings</a>
+        <Link className="dropdown-item" to="bracelets">Bracelets</Link>
+        <Link className="dropdown-item" to="cord-necklaces">Cord Necklaces</Link>
+        <Link className="dropdown-item" to="sterling">Sterling Silver</Link>
+        <Link className="dropdown-item" to="rings">Rings</Link>
+        <Link className="dropdown-item" to="chains">Chain Necklaces</Link>
+        <Link className="dropdown-item" to="earrings">Earrings</Link>
       </div>
     </li>
 
     <li className="nav-item dropdown">
-      <a className="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">faq</a>
+      <Link className="nav-link dropdown-toggle" to="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">faq</Link>
       <div className="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
-        <a className="dropdown-item" href="custom-orders.html">Custom Orders</a>
-        <a className="dropdown-item" href="shipping-refund.html">Shipping//Refund Policy</a>
+        <Link className="dropdown-item" to="custom-orders.html">Custom Orders</Link>
+        <Link className="dropdown-item" to="shipping-refund.html">Shipping//Refund Policy</Link>
       </div>
-    </li>
-
-    <li className="nav-item">
-      <a className="nav-link" href="about.html">About</a>
     </li>
   </ul>
 
