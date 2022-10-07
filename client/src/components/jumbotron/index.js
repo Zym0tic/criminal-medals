@@ -5,7 +5,7 @@ function Jumbotron() {
   return (
     <>
       <img class="banner" src= { jumbotron } alt="criminal medals logo over image of jewlery" />
-      <div class="centered">
+      <div className="centered">
         <h1>Criminal Medals</h1>
       </div>
     </>
