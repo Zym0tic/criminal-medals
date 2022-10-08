@@ -15,7 +15,7 @@ const Collection = () => {
 
       <div class="container-fluid c-list-links">
         <div class="row">
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 col-xs-12">
             <Link to="sterling">
               <img
                 class="collections"
@@ -24,22 +24,22 @@ const Collection = () => {
               />
             </Link>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 col-xs-12">
             <Link to="cord-necklaces">
               <img class="collections" src={cord} alt="cord collection" />
             </Link>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 col-xs-12">
             <Link to="rings">
               <img class="collections" src={ring} alt="ring collection" />
             </Link>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 col-xs-12">
             <Link to="chains">
               <img class="collections" src={chain} alt="chain collection" />
             </Link>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 col-xs-12">
             <Link to="bracelets">
               <img
                 class="collections"
@@ -48,7 +48,7 @@ const Collection = () => {
               />
             </Link>
           </div>
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 col-xs-12">
             <Link to="earrings">
               <img class="collections" src={earring} alt="earring collection" />
             </Link>
