@@ -60,7 +60,7 @@ function Nav() {
             <li className="nav-item">
               <Link className="nav-link" to="/">
                 Home
-              </Link>
+              </Link>m
             </li>
 
             <li className="nav-item dropdown">
