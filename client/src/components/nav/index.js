@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Auth from "../../utils/auth";
+import Cart from "../cart/index.js";
 
 import cmLogo from "../../assets/images/cm-logo.jpg";
 
@@ -126,7 +127,7 @@ function Nav() {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/">
-                Cart
+                <Cart />
               </Link>
             </li>
           </ul>
