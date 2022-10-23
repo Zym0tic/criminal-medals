@@ -121,7 +121,7 @@ function Nav() {
                   Care
                 </Link>
                 <Link className="dropdown-item" to="return">
-                  Shipping//Refund Policy
+                  Return Policy
                 </Link>
               </div>
             </li>
