@@ -117,10 +117,10 @@ function Nav() {
                 className="dropdown-menu dropdown-menu-right"
                 aria-labelledby="navbarDropdown"
               >
-                <Link className="dropdown-item" to="custom-orders.html">
-                  Custom Orders
+                <Link className="dropdown-item" to="care">
+                  Care
                 </Link>
-                <Link className="dropdown-item" to="shipping-refund.html">
+                <Link className="dropdown-item" to="return">
                   Shipping//Refund Policy
                 </Link>
               </div>
