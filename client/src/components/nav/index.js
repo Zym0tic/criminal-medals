@@ -1,6 +1,7 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import Auth from "../../utils/auth";
+import Cart from "../cart/index.js";
 
 import cmLogo from "../../assets/images/cm-logo.jpg";
 
@@ -23,11 +24,15 @@ function Nav() {
     } else {
       return (
         <ul className="navbar-nav ml-auto">
-          <li className="nav-item nav-link">
-            <Link to="/signup">Signup</Link>
+          <li className="nav-item">
+            <Link className="nav-link" to="/signup">
+              Signup
+            </Link>
           </li>
           <li className="nav-item">
-            <Link to="/login">Login</Link>
+            <Link className="nav-link" to="/login">
+              Login
+            </Link>
           </li>
         </ul>
       );
@@ -52,6 +57,7 @@ function Nav() {
 
         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul className="navbar-nav ml-auto">
+            <div>{showNavigation()}</div>
             <li className="nav-item">
               <Link className="nav-link" to="/">
                 Home
@@ -111,16 +117,20 @@ function Nav() {
                 className="dropdown-menu dropdown-menu-right"
                 aria-labelledby="navbarDropdown"
               >
-                <Link className="dropdown-item" to="custom-orders.html">
-                  Custom Orders
+                <Link className="dropdown-item" to="care">
+                  Care
                 </Link>
-                <Link className="dropdown-item" to="shipping-refund.html">
-                  Shipping//Refund Policy
+                <Link className="dropdown-item" to="return">
+                  Return Policy
                 </Link>
               </div>
             </li>
+            <li className="nav-item">
+              <Link className="nav-link" to="/">
+                <Cart />
+              </Link>
+            </li>
           </ul>
-          <div>{showNavigation()}</div>
         </div>
       </nav>
     </>
