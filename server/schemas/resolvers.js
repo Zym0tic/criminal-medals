@@ -1,18 +1,18 @@
 const { AuthenticationError } = require('apollo-server-express');
-const { User, Product, Collection, Order } = require('../models');
+const { User, Product, Category, Order } = require('../models');
 const { signToken } = require('../utils/auth');
 const stripe = require('stripe')('sk_test_4eC39HqLyjWDarjtT1zdp7dc');
 
 const resolvers = {
   Query: {
-    collections: async () => {
-      return await Collection.find();
+    categories: async () => {
+      return await Category.find();
     },
-    products: async (parent, { collection, name }) => {
+    products: async (parent, { category, name }) => {
       const params = {};
 
-      if (collection) {
-        params.collection = collection;
+      if (category) {
+        params.collection = category;
       }
 
       if (name) {
@@ -21,16 +21,16 @@ const resolvers = {
         };
       }
 
-      return await Product.find(params).populate('collection');
+      return await Product.find(params).populate('category');
     },
     product: async (parent, { _id }) => {
-      return await Product.findById(_id).populate('collection');
+      return await Product.findById(_id).populate('category');
     },
     user: async (parent, args, context) => {
       if (context.user) {
         const user = await User.findById(context.user._id).populate({
           path: 'orders.products',
-          populate: 'collection'
+          populate: 'category'
         });
 
         user.orders.sort((a, b) => b.purchaseDate - a.purchaseDate);
@@ -44,7 +44,7 @@ const resolvers = {
       if (context.user) {
         const user = await User.findById(context.user._id).populate({
           path: 'orders.products',
-          populate: 'collection'
+          populate: 'category'
         });
 
         return user.orders.id(_id);
