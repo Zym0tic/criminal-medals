@@ -8,7 +8,6 @@ function Cart() {
       <li>
           <span className="item">
             <span className="item-left">
-                <img src="http://lorempixel.com/50/50/" alt="" />
                 <span className="item-info">
                     <span>Item name</span>
                     <span>23$</span>

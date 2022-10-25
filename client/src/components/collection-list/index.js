@@ -11,46 +11,46 @@ import earring from "../../assets/images/collections/earring.PNG";
 const Collection = () => {
   return (
     <section id="collections-list">
-      <h2 class="collections-heading">Collection List</h2>
+      <h2 className="collections-heading">Collection List</h2>
 
-      <div class="container-fluid c-list-links">
-        <div class="row">
-          <div class="col-lg-4 col-md-6 col-xs-12">
+      <div className="container-fluid c-list-links">
+        <div className="row">
+          <div className="col-lg-4 col-md-6 col-xs-12">
             <Link to="sterling">
               <img
-                class="collections"
+                className="collections"
                 src={sterling}
                 alt="sterling silver collection"
               />
             </Link>
           </div>
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          <div className="col-lg-4 col-md-6 col-xs-12">
             <Link to="cord-necklaces">
-              <img class="collections" src={cord} alt="cord collection" />
+              <img className="collections" src={cord} alt="cord collection" />
             </Link>
           </div>
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          <div className="col-lg-4 col-md-6 col-xs-12">
             <Link to="rings">
-              <img class="collections" src={ring} alt="ring collection" />
+              <img className="collections" src={ring} alt="ring collection" />
             </Link>
           </div>
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          <div className="col-lg-4 col-md-6 col-xs-12">
             <Link to="chains">
-              <img class="collections" src={chain} alt="chain collection" />
+              <img className="collections" src={chain} alt="chain collection" />
             </Link>
           </div>
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          <div className="col-lg-4 col-md-6 col-xs-12">
             <Link to="bracelets">
               <img
-                class="collections"
+                className="collections"
                 src={bracelet}
                 alt="bracelet collection"
               />
             </Link>
           </div>
-          <div class="col-lg-4 col-md-6 col-xs-12">
+          <div className="col-lg-4 col-md-6 col-xs-12">
             <Link to="earrings">
-              <img class="collections" src={earring} alt="earring collection" />
+              <img className="collections" src={earring} alt="earring collection" />
             </Link>
           </div>
         </div>

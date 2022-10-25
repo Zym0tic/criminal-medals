@@ -5,15 +5,15 @@ const Instagram = () => {
   return (
     <>
       <section id="instagram">
-        <div class="insta-row row">
-          <div class="col-lg-6">
-            <img class="market-img" src={marketImg} alt="" />
+        <div className="insta-row row">
+          <div className="col-lg-6">
+            <img className="market-img" src={marketImg} alt="" />
           </div>
-          <div class="col-lg-6">
-            <h2 class="insta-content insta-header">
+          <div className="col-lg-6">
+            <h2 className="insta-content insta-header">
               Criminal Medals on Instagram
             </h2>
-            <p class="insta-content insta-para">
+            <p className="insta-content insta-para">
               For the most up to date information check out our instagram and
               give it a follow! Lots of vending dates coming up to see off
               summer, new releases, and giveaways!
@@ -21,7 +21,7 @@ const Instagram = () => {
             <a
               rel=""
               href="https://www.instagram.com/criminalmedals/"
-              class="btn btn-outline-light btn-lg insta-button"
+              className="btn btn-outline-light btn-lg insta-button"
               role="button"
               aria-pressed="true"
             >
