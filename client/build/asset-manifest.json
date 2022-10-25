@@ -1,0 +1,30 @@
+{
+  "files": {
+    "main.css": "/static/css/main.939cea23.chunk.css",
+    "main.js": "/static/js/main.570ce8a2.chunk.js",
+    "main.js.map": "/static/js/main.570ce8a2.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.f23022ca.js",
+    "runtime-main.js.map": "/static/js/runtime-main.f23022ca.js.map",
+    "static/js/2.e2a1bd50.chunk.js": "/static/js/2.e2a1bd50.chunk.js",
+    "static/js/2.e2a1bd50.chunk.js.map": "/static/js/2.e2a1bd50.chunk.js.map",
+    "static/js/3.866d46d6.chunk.js": "/static/js/3.866d46d6.chunk.js",
+    "static/js/3.866d46d6.chunk.js.map": "/static/js/3.866d46d6.chunk.js.map",
+    "index.html": "/index.html",
+    "static/css/main.939cea23.chunk.css.map": "/static/css/main.939cea23.chunk.css.map",
+    "static/js/2.e2a1bd50.chunk.js.LICENSE.txt": "/static/js/2.e2a1bd50.chunk.js.LICENSE.txt",
+    "static/media/bracelet.d8378cdd.PNG": "/static/media/bracelet.d8378cdd.PNG",
+    "static/media/chain.a372f276.PNG": "/static/media/chain.a372f276.PNG",
+    "static/media/cord.63fe827f.PNG": "/static/media/cord.63fe827f.PNG",
+    "static/media/earring.0a64556c.PNG": "/static/media/earring.0a64556c.PNG",
+    "static/media/jumbotron.1010229c.jpg": "/static/media/jumbotron.1010229c.jpg",
+    "static/media/market-img.c2221be1.jpg": "/static/media/market-img.c2221be1.jpg",
+    "static/media/rings.fe802ffa.PNG": "/static/media/rings.fe802ffa.PNG",
+    "static/media/sterling.b5053482.PNG": "/static/media/sterling.b5053482.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f23022ca.js",
+    "static/js/2.e2a1bd50.chunk.js",
+    "static/css/main.939cea23.chunk.css",
+    "static/js/main.570ce8a2.chunk.js"
+  ]
+}
