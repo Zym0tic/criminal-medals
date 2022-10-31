@@ -15,7 +15,13 @@ function Login(props) {
         variables: { email: formState.email, password: formState.password },
       });
       const token = mutationResponse.data.login.token;
+      const admin = mutationResponse.data.login.user.isAdmin;
+      
+      // console.log(token);
+      // console.log(admin);
       Auth.login(token);
+      Auth.adminAuth(admin);
+      
     } catch (e) {
       console.log(e);
     }
