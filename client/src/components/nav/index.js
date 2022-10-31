@@ -39,6 +39,18 @@ function Nav() {
     }
   }
 
+  function adminTools() {
+    if (Auth.adminCheck()) {
+      return (
+        <ul className="navbar-nav ml-auto">
+          <li className="nav-item">
+            <Link to="/admin">Admin Tools</Link>
+          </li>
+        </ul>
+      )
+    } 
+  }
+
   return (
     <>
       <nav className="navbar navbar-expand-lg navbar-light">
@@ -58,6 +70,7 @@ function Nav() {
         <div className="collapse navbar-collapse" id="navbarTogglerDemo02">
           <ul className="navbar-nav ml-auto">
             <div>{showNavigation()}</div>
+            <div>{adminTools()}</div>
             <li className="nav-item">
               <Link className="nav-link" to="/">
                 Home
@@ -127,7 +140,7 @@ function Nav() {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/">
-                <Cart />
+                {/* <Cart /> */}
               </Link>
             </li>
           </ul>

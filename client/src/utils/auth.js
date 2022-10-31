@@ -10,6 +10,19 @@ class AuthService {
     const token = this.getToken();
     return !!token && !this.isTokenExpired(token);
   }
+  adminCheck() {
+    let adminToken = this.getAdmin();
+    if (adminToken == "true") {
+      return !! adminToken;
+    }
+    else {console.log(adminToken)};
+  }
+
+  adminAuth(adminToken) {
+    localStorage.setItem('admin_token', adminToken);
+
+    window.location.assign('/');
+  }
 
   isTokenExpired(token) {
     try {
@@ -27,6 +40,10 @@ class AuthService {
     return localStorage.getItem('id_token');
   }
 
+  getAdmin() {
+    return localStorage.getItem('admin_token')
+  }
+
   login(idToken) {
     // Saves user token to localStorage
     localStorage.setItem('id_token', idToken);
@@ -37,6 +54,7 @@ class AuthService {
   logout() {
     // Clear user token and profile data from localStorage
     localStorage.removeItem('id_token');
+    localStorage.removeItem('admin_token');
     // this will reload the page and reset the state of the application
     window.location.assign('/');
   }
