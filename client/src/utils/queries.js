@@ -9,7 +9,7 @@ export const QUERY_PRODUCTS = gql`
       price
       quantity
       image
-      collection {
+      category {
         _id
       }
     }
@@ -32,7 +32,7 @@ export const QUERY_ALL_PRODUCTS = gql`
       description
       price
       quantity
-      collection {
+      category {
         name
       }
     }
@@ -41,7 +41,7 @@ export const QUERY_ALL_PRODUCTS = gql`
 
 export const QUERY_COLLECTIONS = gql`
   {
-    collections {
+    categories {
       _id
       name
     }

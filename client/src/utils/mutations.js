@@ -22,7 +22,7 @@ export const ADD_ORDER = gql`
         description
         price
         quantity
-        collection {
+        category {
           name
         }
       }
