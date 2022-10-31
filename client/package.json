@@ -2,6 +2,7 @@
   "name": "criminal-medals",
   "version": "0.1.0",
   "private": true,
+  "proxy": "http://localhost:3001/",
   "type": "module",
   "dependencies": {
     "@apollo/client": "^3.5.8",
