@@ -140,7 +140,7 @@ function Nav() {
             </li>
             <li className="nav-item">
               <Link className="nav-link" to="/">
-                {/* <Cart /> */}
+                <Cart />
               </Link>
             </li>
           </ul>
