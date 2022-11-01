@@ -15,6 +15,7 @@ import Care from "./pages/care.js";
 import Nav from "./components/nav/index.js";
 import Footer from "./components/footer/index.js";
 import Return from "./pages/refund-policy.js";
+import { StoreProvider } from "./utils/GlobalState.js";
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -43,6 +44,7 @@ function App() {
   return (
     <ApolloProvider client={client}>
     <Router>
+      <StoreProvider>
       <Nav />
       <Routes>
         <Route path="/" element={<Home />} />
@@ -52,6 +54,7 @@ function App() {
         <Route path="/Return" element={<Return />} />
       </Routes>
       <Footer />
+      </StoreProvider>
     </Router>
     </ApolloProvider>
   );
