@@ -11,13 +11,12 @@ function Nav() {
       return (
         <ul className="navbar-nav ml-auto">
           <li className="nav-item">
-            <Link to="/orderHistory">Order History</Link>
+            <Link className="nav-link" to="/orderHistory">Order History</Link>
           </li>
           <li className="nav-item">
-            {/* this is not using the Link component to logout or user and then refresh the application to the start */}
-            <a href="/" onClick={() => Auth.logout()}>
+            <Link className="nav-link" to="/" onClick={() => Auth.logout()}>
               Logout
-            </a>
+            </Link>
           </li>
         </ul>
       );
