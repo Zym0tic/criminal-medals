@@ -125,10 +125,21 @@ function Nav() {
                 </Link>
               </div>
             </li>
-            <li className="nav-item">
-              <Link className="nav-link" to="/">
-                <Cart />
+            <li className="nav-item dropdown">
+              <Link className="nav-link dropdown-toggle"
+                to="#"
+                id="navbarDropdown"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false">
+                Cart
               </Link>
+              <div
+                className="dropdown-menu dropdown-menu-right"
+                aria-labelledby="navbarDropdown"
+              ><Cart /></div>
+              
             </li>
           </ul>
         </div>
