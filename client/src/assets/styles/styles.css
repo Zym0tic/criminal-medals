@@ -144,6 +144,26 @@ p {
   text-align: center;
 }
 
+/* login */
+
+.flex-row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.space-between {
+  justify-content: space-between;
+}
+
+.flex-end {
+  justify-content: flex-end;
+}
+
+.my-2 {
+  margin-top:  calc(1rem);
+  margin-bottom: calc(1rem);
+}
+
 /* media */
 @media (max-width: 1028px) {
   /* homepage */
