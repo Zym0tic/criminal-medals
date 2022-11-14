@@ -4,8 +4,8 @@ import {
   InMemoryCache,
   ApolloProvider,
   createHttpLink,
-} from '@apollo/client';
-import { setContext } from '@apollo/client/link/context';
+} from "@apollo/client";
+import { setContext } from "@apollo/client/link/context";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import Home from "./pages/home.js";
@@ -15,21 +15,23 @@ import Care from "./pages/care.js";
 import Nav from "./components/nav/index.js";
 import Footer from "./components/footer/index.js";
 import Return from "./pages/refund-policy.js";
+import OrderHistory from "./pages/OrderHistory.js";
+// import Success from './pages/Success.js';
 import { StoreProvider } from "./utils/GlobalState.js";
 
 const httpLink = createHttpLink({
-  uri: '/graphql',
+  uri: "/graphql",
 });
 
 // Construct request middleware that will attach the JWT token to every request as an `authorization` header
 const authLink = setContext((_, { headers }) => {
   // get the authentication token from local storage if it exists
-  const token = localStorage.getItem('id_token');
+  const token = localStorage.getItem("id_token");
   // return the headers to the context so httpLink can read them
   return {
     headers: {
       ...headers,
-      authorization: token ? `Bearer ${token}` : '',
+      authorization: token ? `Bearer ${token}` : "",
     },
   };
 });
@@ -43,19 +45,21 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-    <Router>
-      <StoreProvider>
-      <Nav />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/signup" element={<Signup />} />
-        <Route path="/login" element={<Login />} />
-        <Route path="/care" element={<Care />} />
-        <Route path="/Return" element={<Return />} />
-      </Routes>
-      <Footer />
-      </StoreProvider>
-    </Router>
+      <Router>
+        <StoreProvider>
+          <Nav />
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/signup" element={<Signup />} />
+            <Route path="/login" element={<Login />} />
+            {/* <Route path="/success" element={<Success />} /> */}
+            <Route path="/care" element={<Care />} />
+            <Route path="/Return" element={<Return />} />
+            <Route path="/orderHistory" element={<OrderHistory />} />
+          </Routes>
+          <Footer />
+        </StoreProvider>
+      </Router>
     </ApolloProvider>
   );
 }
