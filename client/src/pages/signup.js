@@ -54,7 +54,6 @@ const Signup = () => {
 
       <h2>Signup</h2>
       <form onSubmit={handleFormSubmit}>
-        <div className="row">
           <div className="form-group col-md-12 col-lg-6">
             <label htmlFor="firstName">First Name:</label>
             <input
@@ -76,15 +75,13 @@ const Signup = () => {
               id="lastName"
               onChange={handleChange}
             />
-          </div>
         </div>
 
-        <div className="row">
           <div className="form-group col-md-12 col-lg-6">
             <label htmlFor="email">Email:</label>
             <input
               className="form-control"
-              placeholder="youremail@test.com"
+              placeholder="youremail@email.com"
               name="email"
               type="email"
               id="email"
@@ -102,9 +99,8 @@ const Signup = () => {
               onChange={handleChange}
             />
           </div>
-        </div>
         <div className="flex-row flex-start">
-          <button className="btn btn-outline-dark btn-lg insta-button" type="submit">Submit</button>
+          <button className="btn btn-outline-dark btn-lg" type="submit">Submit</button>
         </div>
       </form>
     </div>
