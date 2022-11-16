@@ -16,6 +16,7 @@ import Nav from "./components/nav/index.js";
 import Footer from "./components/footer/index.js";
 import Return from "./pages/refund-policy.js";
 import OrderHistory from "./pages/OrderHistory.js";
+import Shop from "./pages/shop.js";
 // import Success from './pages/Success.js';
 import { StoreProvider } from "./utils/GlobalState.js";
 
@@ -56,6 +57,7 @@ function App() {
             <Route path="/care" element={<Care />} />
             <Route path="/Return" element={<Return />} />
             <Route path="/orderHistory" element={<OrderHistory />} />
+            <Route path="/shop" element={<Shop />} />
           </Routes>
           <Footer />
         </StoreProvider>
