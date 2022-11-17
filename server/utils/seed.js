@@ -1,4 +1,4 @@
-const db = require('./connection');
+const db = require('../config/connection');
 const {User, Product, Category} = require('../models');
 
 db.once('open', async () => {
