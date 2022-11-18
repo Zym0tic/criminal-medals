@@ -6,7 +6,7 @@ import { idbPromise } from '../../utils/helpers';
 import CartItem from '../cartItem';
 import Auth from '../../utils/auth';
 import { useStoreContext } from '../../utils/GlobalState';
-import { TOGGLE_CART, ADD_MULTIPLE_TO_CART } from '../../utils/actions';
+import { ADD_MULTIPLE_TO_CART } from '../../utils/actions';
 
 // stripePromise returns a promise with the stripe object as soon as the Stripe package loads
 const stripePromise = loadStripe('pk_test_TYooMQauvdEDq54NiTphI7jx');
