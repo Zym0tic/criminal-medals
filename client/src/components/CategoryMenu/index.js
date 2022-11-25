@@ -46,7 +46,7 @@ function CategoryMenu() {
     <div>
       {categories.map((item) => (
         <Link
-          className='dropdown-item' to='/shop'
+          className='dropdown-item'
           key={item._id}
           onClick={() => {
             handleClick(item._id);
