@@ -29,7 +29,7 @@ db.once('open', async () => {
 
  await Product.deleteMany();
 
- const products = await Product.insertMany([
+ const products = [
     {
         name: "FIGHT WAR NOT WARS",
         description: "Made of brass, acid etched, soldered and connected with brass rope chain.",
@@ -103,7 +103,27 @@ db.once('open', async () => {
         category: categories[1]._id
     }
 
- ])
+]
+
+ for (let i = 0; i < products.length; i++) {
+    let product = await Product.create(products[i]);
+    // console.log(snippet, "message");
+    
+      for (let i = 0; i < categories.length; i++) {
+
+        const category = categories[i];
+        console.log(category);
+        console.log(product.category);
+        if (product.category === category._id) {
+          const newCat = await Category.findOneAndUpdate({_id: category._id}, {
+            $addToSet: {
+              products: product._id,
+            },
+          }) 
+          console.log(newCat);
+        }
+      }
+    }
 
  console.log('products seeded');
 
