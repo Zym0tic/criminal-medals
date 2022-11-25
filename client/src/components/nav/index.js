@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Auth from "../../utils/auth";
 import Cart from "../cart/index.js";
+import CategoryMenu from "../CategoryMenu";
 
 import cmLogo from "../../assets/images/cm-logo.jpg";
 
@@ -79,7 +80,8 @@ function Nav() {
                 className="dropdown-menu dropdown-menu-right"
                 aria-labelledby="navbarDropdown"
               >
-                <Link className="dropdown-item" to="bracelets">
+                < CategoryMenu />
+                {/* <Link className="dropdown-item" to="bracelets">
                   Bracelets
                 </Link>
                 <Link className="dropdown-item" to="cord-necklaces">
@@ -96,7 +98,7 @@ function Nav() {
                 </Link>
                 <Link className="dropdown-item" to="earrings">
                   Earrings
-                </Link>
+                </Link> */}
               </div>
             </li>
 
