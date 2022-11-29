@@ -44,6 +44,13 @@ export const QUERY_CATEGORIES = gql`
     categories {
       _id
       name
+      products {
+        _id
+        name
+        description
+        price
+        quantity
+      }
     }
   }
 `;
